@@ -11,11 +11,11 @@ import { toast } from "react-toastify";
 import { useAuth } from "../context/AuthContext";
 import GoUp from "../components/GoUp";
 import { FaShoppingCart } from "react-icons/fa";
-import { useCart } from "../context/Cartcontext";
+import { useCart } from "../context/CartContext";
 
 const LINKS = ["/", "Shop", "About Us", "Contact"];
 
-const Header = ({mode,setMode}) => {
+const Header = ({ mode, setMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showAccountForm, setShowAccountForm] = useState(false);
   const [showMobileAccountMenu, setShowMobileAccountMenu] = useState(false);
