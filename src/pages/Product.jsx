@@ -6,7 +6,7 @@ import star_dull from "../assets/star_dull_icon.svg";
 import heart_icon from "../assets/heart_icon.svg";
 import { useAuth } from "../context/AuthContext";
 import { toast } from "react-toastify";
-import { useCart } from "../context/Cartcontext";
+import { useCart } from "../context/CartContext";
 import Loader from "../components/Loader";
 
 const Product = () => {
