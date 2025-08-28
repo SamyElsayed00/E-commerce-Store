@@ -65,7 +65,7 @@ const Header = ({ mode, setMode }) => {
         document.documentElement.classList.remove("dark");
       }
     }
-  }, []);
+  }, [setMode]);
 
   const LoginSchema = Yup.object().shape({
     email: Yup.string().email("Invalid email").required("Required"),
