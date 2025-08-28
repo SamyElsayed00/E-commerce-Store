@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.container {
+  @apply flex items-center justify-between mx-auto px-6 md:px-16 lg:px-32 py-3 dark:text-white text-gray-700;
+}
+
+@theme {
+  --color-primary: #ea580c;
+  --color-title: rgba(30, 41, 57, 0.88);
+  --color-subtitle: rgba(30, 41, 57, 0.6);
+}
+body {
+  font-family: "Outfit", sans-serif;
+}
