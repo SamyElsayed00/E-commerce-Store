@@ -1,5 +1,5 @@
 // ✅ All required imports
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import star_icon from "../assets/star_icon.svg";
 import star_dull from "../assets/star_dull_icon.svg";
@@ -18,6 +18,8 @@ const Product = () => {
 
   const { addToCart } = useCart();
 
+  const navigate = useNavigate();
+
   const handleAddToCart = () => {
     if (!loggedInUser) {
       toast.warn("Login please.");
@@ -33,6 +35,7 @@ const Product = () => {
       toast.warn("Login please.");
       return;
     }
+    navigate("/checkout");
   };
 
   useEffect(() => {
@@ -171,13 +174,12 @@ const Product = () => {
             >
               Add to Cart
             </button>
-            <Link
-              to={"/checkout"}
+            <button
               onClick={handleBuy}
               className="cursor-pointer text-center w-full py-3.5 bg-orange-500 text-white font-medium hover:bg-orange-600 transition"
             >
               Buy Now
-            </Link>
+            </button>
           </div>
         </div>
       </div>

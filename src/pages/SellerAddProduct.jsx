@@ -21,7 +21,7 @@ const SellerAddProduct = () => {
         {/* Product Image Area */}
         <label>
           <p className="text-gray-700 dark:text-gray-200 font-medium">
-            Product Image
+            Product Images
           </p>
           <div className="flex gap-3 mt-2 items-center">
             {images.map((img, index) => (
@@ -35,7 +35,7 @@ const SellerAddProduct = () => {
                 <img
                   width="100px"
                   height="100px"
-                  className="max-w-24 object-cover border border-gray-300 dark:border-gray-700 rounded"
+                  className="max-w-24 object-cover dark:border-gray-700 rounded"
                   src={img || upload_img}
                   alt="upload preview"
                 />
