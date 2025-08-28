@@ -241,10 +241,10 @@ const Header = ({ mode, setMode }) => {
               to={`${link.toLowerCase().replace(/\s+/g, "-")}`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={({ isActive }) =>
-                `transition duration-200 hover:text-gray-900 dark:hover:text-gray-300 ${
+                `transition duration-200 hover:text-orange-600 dark:hover:text-orange-600 ${
                   isActive
                     ? "text-orange-600 font-semibold"
-                    : "text-gray-700 dark:text-gray-100"
+                    : ""
                 }`
               }
             >
