@@ -13,6 +13,8 @@ import SellerAddProduct from "./pages/SellerAddProduct";
 import SellerOrders from "./pages/SellerOrders";
 import SellerProductList from "./pages/SellerProductList";
 import { useTheme } from "./hooks/useTheme";
+import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
 
 function App() {
   const location = useLocation();
@@ -29,6 +31,8 @@ function App() {
         <Route path="product/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
 
         {/* Seller Routes with their own layout */}
         <Route path="/seller" element={<SellerLayout />}>
